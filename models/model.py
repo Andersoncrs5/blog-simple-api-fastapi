@@ -4,7 +4,7 @@ from sqlalchemy.orm import sessionmaker, relationship
 
 Base = declarative_base()
 
-DATABASE_URL = "postgresql://postgres:An100605$@localhost:5432/blog_simple_api_fast"
+DATABASE_URL = "postgresql://postgres:12345678@localhost:5432/blog_simple_api_fast"
 
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
